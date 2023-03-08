@@ -2,12 +2,12 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} is setting up a pdftk environment 🚀
 on: [push]
 jobs:
-  deploy-pdftk:
+  merge-pdfs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3 
-        with:
-          path: main
+#        with:
+#          path: main
       - run: |
           sudo apt update -y
           sudo wget http://archive.ubuntu.com/ubuntu/pool/universe/p/pdftk/pdftk_2.02-5_amd64.deb
