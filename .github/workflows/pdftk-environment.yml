@@ -16,4 +16,5 @@ jobs:
           pdftk --version
           pwd
           ls
-#          pdftk *.pdf cat output merged.pdf
+          pdftk *.pdf cat output merged.pdf
+          ls
