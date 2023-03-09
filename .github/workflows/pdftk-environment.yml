@@ -14,7 +14,7 @@ jobs:
           sudo apt-get install pdftk-java
           sudo dpkg -i pdftk_2.02-5_amd64.deb
           pdftk --version
-          pwd
-          ls
           pdftk *.pdf cat output merged.pdf
-          ls
+          git add merged.pdf
+          git commit -m "adding merged file to git"
+          git push origin main      
