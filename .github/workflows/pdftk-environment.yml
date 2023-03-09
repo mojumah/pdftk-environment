@@ -15,6 +15,8 @@ jobs:
           sudo dpkg -i pdftk_2.02-5_amd64.deb
           pdftk --version
           pdftk *.pdf cat output merged.pdf
+          git config --global user.email "mohammad_jumah@outlook.com"
+          git config --global user.name "Mo Jumah"
           git add merged.pdf
           git commit -m "adding merged file to git"
           git push origin main      
