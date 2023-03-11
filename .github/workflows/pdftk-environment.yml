@@ -14,3 +14,4 @@ jobs:
           role-external-id: ${{ secrets.AWS_ROLE_EXTERNAL_ID }}          
       - run: |
           aws s3 ls
+          aws s3 ls
