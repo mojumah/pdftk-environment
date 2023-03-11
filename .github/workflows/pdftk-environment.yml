@@ -25,6 +25,8 @@ jobs:
           role-duration-seconds: 1200
           role-session-name: MySessionName        
       - run: |
+          mkdir merging-dir
+          cd merging-dir
           aws s3 sync . s3://my-pdf-certificates
           pdftk *.pdf cat output certificates-merged.pdf
           aws s3 sync . s3://my-pdf-certificates
