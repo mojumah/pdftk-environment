@@ -17,20 +17,6 @@ jobs:
           git config user.email github-actions[bot]@users.noreply.github.com
           git add .
           git commit -m "pushing merged file"
-
-#      - name: Configure AWS Credentials
-#        uses: aws-actions/configure-aws-credentials@v2
-#        with:
-#          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-#          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-#          aws-region: us-east-1
-#          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
-#          role-external-id: ${{ secrets.AWS_ROLE_EXTERNAL_ID }}
-
-#      - name: Sync Statments from S3 before merging them
-#        run: |
-#          aws s3 ls
-
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
