@@ -5,7 +5,7 @@ jobs:
   configure-aws-cli:
     runs-on: ubuntu-latest
     steps:
-    
+
       - name: Install pdftk
         uses: actions/checkout@v3
       - run: |
@@ -25,4 +25,6 @@ jobs:
           role-duration-seconds: 1200
           role-session-name: MySessionName        
       - run: |
-          aws s3 ls
+          aws s3 sync . s3://my-pdf-certificates
+          pdftk *.pdf cat output certificates-merged.pdf
+          aws s3 sync . s3://my-pdf-certificates
