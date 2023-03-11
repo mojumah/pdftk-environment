@@ -24,11 +24,7 @@ jobs:
           role-duration-seconds: 1200
           role-session-name: MySessionName        
       - run: |
-          pwd
-          sudo mkdir merging-dir
-          cd merging-dir
-          pwd
-          aws s3 sync . s3://my-pdf-certificates
-          ls -la 
-    #      pdftk *.pdf cat output certificates-merged.pdf
-    #      aws s3 sync /home/runner/work/pdftk-environment/pdftk-environment/merging-dir s3://my-pdf-certificates
+          aws s3 sync s3://my-pdf-certificates .
+          ls -la
+          pdftk *.pdf cat output certificates-merged.pdf
+          aws s3 sync certificates-merged.pdf s3://my-pdf-certificates
