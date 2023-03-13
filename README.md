@@ -46,4 +46,4 @@ Automated pdf page merging Workflow:
 
 1- Create an S3 bucket and upload the pdf files you want to merge to the bucket. 
 
-2- In GitHub click on Actions. From the left menu, click on GigHub Actions Demo, and then click on Run workflow.
+2- In GitHub click on Actions. From the left menu, click on GitHub Actions Demo, and then click on Run workflow.
