@@ -4,9 +4,9 @@ Prerequisites
 
 - github-actions user with the following policy:
 
-{
 
-    "Version": "2012-10-17",
+
+ {  "Version": "2012-10-17",
 
 
 
@@ -40,9 +40,9 @@ Prerequisites
 
 - github-actions role with the following Trust relationship
 
-{
 
-    "Version": "2012-10-17",
+
+{   "Version": "2012-10-17",
     
 
     "Statement": [
