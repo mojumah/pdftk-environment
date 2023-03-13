@@ -4,11 +4,12 @@ Prerequisites
 
 - github-actions user with the following policy:
 
+```json
+{
+
+    "Version": "2012-10-17",
 
 
- 
-
-{  "Version": "2012-10-17",
 
     "Statement": [
 
@@ -35,14 +36,15 @@ Prerequisites
 
     ]
 }
-
+```
 
 
 - github-actions role with the following Trust relationship
 
+```json
+{
 
-
-{   "Version": "2012-10-17",
+    "Version": "2012-10-17",
     
 
     "Statement": [
@@ -71,7 +73,7 @@ Prerequisites
 
     ]
 }
-
+```
 
 Automated pdf page merging Workflow:
 
