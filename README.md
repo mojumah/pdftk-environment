@@ -2,6 +2,8 @@
 
 Prerequisites 
 
+- S3 Browser Installed on a Microsoft Windows (10 or 11) System 
+
 - github-actions user with the following policy:
 
 ```json
