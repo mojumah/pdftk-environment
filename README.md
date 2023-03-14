@@ -1,7 +1,5 @@
 [![GitHub Actions Demo](https://github.com/mojumah/pdftk-environment/actions/workflows/pdftk-environment.yml/badge.svg)](https://github.com/mojumah/pdftk-environment/actions/workflows/pdftk-environment.yml)
 
-![PDF Tool Kit](https://github.com/mojumah/pdftk-environment/blob/main/badge.png)
-
 Prerequisites 
 
 - S3 Browser Installed on a Microsoft Windows (10 or 11) System 
