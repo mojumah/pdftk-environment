@@ -2,7 +2,7 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} is setting up a pdftk environment 🚀
 on: [workflow_dispatch]
 jobs:
-  configure-aws-cli:
+  merging-multiple-pdf-documents:
     runs-on: ubuntu-latest
     steps:
 
