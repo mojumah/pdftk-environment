@@ -28,3 +28,12 @@ jobs:
           pdftk *.pdf cat output certificates-merged.pdf
           ls -la
           aws s3 cp certificates-merged.pdf s3://my-pdf-certificates
+
+      - uses: hashicorp/setup-terraform@v1
+      - run: | 
+          terraform --version
+          cd terraform-iac
+          terraform init
+          terraform plan
+          terraform apply -auto-approve
+          terraform destroy -auto-approve
