@@ -29,6 +29,12 @@ jobs:
           ls -la
           aws s3 cp certificates-merged.pdf s3://my-pdf-certificates
 
+      - name: Archive artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: updating-disclosure
+          path: /home/runner/work/fdr/fdr/certificates-merged.pdf
+
       - uses: hashicorp/setup-terraform@v1
       - run: | 
           terraform --version
