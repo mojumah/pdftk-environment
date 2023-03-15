@@ -2,7 +2,7 @@
 
 Solution Architecture
 
-https://github.com/mojumah/pdftk-environment/architecture.jpg
+![Architecture](architecture.jpg)
 
 Prerequisites 
 
